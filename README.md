@@ -1,5 +1,6 @@
 # wordTransform
 ###原生JS+CSS3+canvas实现的文字转换特效    ![View online](http://www.neove.cc/wordTransform/index.html)
+（打不开请戳http://neove.cc/wordTransform/index.html）
 ====
     前几天突发奇想，希望实现动态的文字转换特效，刚开始的想法是通过js检测屏幕上每个像素点的显示状态，然后控制每个像素点的移动来
     实现但是查阅后发现，js没有这种功能。
