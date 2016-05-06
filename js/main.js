@@ -54,12 +54,13 @@ window.onload=function(){
                 clearInterval(timer);
                 onOff=1;
             }
-        },2000);
+        },2500);
 
     })();
 
     function posRandom(obj){
-        obj.style.left=Math.round(Math.random()*1300)+'px';
+        var  a=o_div.offsetWidth;
+        obj.style.left=Math.round(Math.random()*a)+'px';
         obj.style.top=Math.round(Math.random()*300)+'px';
     }
     //text transform function
@@ -95,8 +96,9 @@ window.onload=function(){
     //move text
     function textMove(data){
         setTimeout(function(){
+            var  a=o_div.offsetWidth;
             for(var i=0;i<o_span.length;i++){
-                o_span[i].style.left=data.left[i]+530+'px';
+                o_span[i].style.left=data.left[i]+a/2.6+'px';
                 o_span[i].style.top=data.top[i]+'px';
                 o_span[i].style.opacity='1';
             }
