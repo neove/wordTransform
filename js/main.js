@@ -14,8 +14,8 @@ window.onload=function(){
         };
         //word limit
         input.onkeydown=function(){
-            if(this.value.length>10){
-                this.value=this.value.substring(0,10);
+            if(this.value.length>5){
+                this.value=this.value.substring(0,5);
             }
         };
         input.onkeyup=function(e){
@@ -34,9 +34,9 @@ window.onload=function(){
             }
         };
     })();
-   //¿ª³¡°×
+   //å¼€åœºç™½
     (function(){
-        var word=["2","1","hi :)","I am","Neo","Try it now","Enjoy >_<"];
+        var word=["2","1","hi :)","I am","Neo","Try it","â¤" ,">_<"];
         var timer=null,
             data,
             i=0;
@@ -121,7 +121,7 @@ window.onload=function(){
         canvas_data=ctx.getImageData(0,0,300,300);
         for( y=0;y<300;y++){
             for( x=0;x<300;x++){
-                if(canvas_data.data[(y*300+x)*4+3]!='0'){//±³¾°É«ÊÇºÚÉ«Í¸Ã÷µÄrgba(0,0,0,0)
+                if(canvas_data.data[(y*300+x)*4+3]!='0'){//èƒŒæ™¯è‰²æ˜¯é»‘è‰²é€æ˜Žçš„rgba(0,0,0,0)
                     pos_arr.left.push(x);
                     pos_arr.top.push(y);
                 }
