@@ -15,7 +15,7 @@ window.onload=function(){
         //word limit
         input.onkeydown=function(){
             if(this.value.length>10){
-                this.value=this.value.substring(0,10)
+                this.value=this.value.substring(0,10);
             }
         };
         input.onkeyup=function(e){
@@ -53,8 +53,8 @@ window.onload=function(){
             if(i==word.length){
                 clearInterval(timer);
                 onOff=1;
-            };
-        },4000)
+            }
+        },2000);
 
     })();
 
@@ -68,7 +68,7 @@ window.onload=function(){
         if(num==0){
             num=data.left.length;
             for( i=0;i<data.left.length;i++){
-                stri+='<span></span>'
+                stri+='<span></span>';
             }
             o_div.innerHTML=stri;
             for( i=0;i<o_span.length;i++){
@@ -81,7 +81,7 @@ window.onload=function(){
                 }
             }else{
                 for(i=num;i<data.left.length;i++){
-                    stri+='<span></span>'
+                    stri+='<span></span>';
                 }
                 o_div.innerHTML+=stri;
                 for(i=num;i<data.left.length;i++){
@@ -100,7 +100,7 @@ window.onload=function(){
                 o_span[i].style.top=data.top[i]+'px';
                 o_span[i].style.opacity='1';
             }
-        },50)
+        },50);
     }
     //canvas settings and return position data
     function canvasSetting(cont){
