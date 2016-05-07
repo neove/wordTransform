@@ -32,3 +32,8 @@ input.input {
 canvas{
     display: none;
 }
+p.logo{
+    text-align: center;
+    padding-top: 20px;
+    
+}

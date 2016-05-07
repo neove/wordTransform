@@ -27,7 +27,6 @@ window.onload=function(){
                     var cont=this.value;
                     this.value='';
                     data=canvasSetting(cont);
-                    //text transform
                     textSetting(data);
                     textMove(data);
                 }
